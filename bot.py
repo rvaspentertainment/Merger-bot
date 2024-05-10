@@ -460,7 +460,7 @@ async def about_handler(c: Client, m: Message):
 
 **Dᴇᴠᴇʟᴏᴘᴇʀ :** [Appuz](https://t.me/Appuz_007)
 """,
-        quote=True)
+        quote=True, Disable_web_page_preview=True)
 
 
 @mergeApp.on_message(

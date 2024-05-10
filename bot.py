@@ -196,6 +196,7 @@ async def start_handler(c: Client, m: Message):
     res = await m.reply_text(
         text=f"Hi **{m.from_user.first_name}**\n\n ⚡ I am a file/video merger bot\n\n😎 I can merge Telegram files!, And upload it to telegram\n\n**[Made with ♥ by](https://t.me/botio_devs)** ",
         quote=True,
+        Disable_web_page_preview=True
     )
     del user
 

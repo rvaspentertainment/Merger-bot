@@ -191,23 +191,11 @@ async def broadcast_handler(c: Client, m: Message):
 
 @mergeApp.on_message(filters.command(["start"]) & filters.private)
 async def start_handler(c: Client, m: Message):
-    user = UserSettings(m.from_user.id, m.from_user.first_name)
-
-    if m.from_user.id != int(Config.OWNER):
-        if user.allowed is False:
-            res = await m.reply_text(
-                text=f"Hi **{m.from_user.first_name}**\n\n 🛡️ Unfortunately you can't use me\n\n**Contact: 🈲 @{Config.OWNER_USERNAME}** ",
-                quote=True,
-            )
-            return
-    else:
-        user.allowed = True
-        user.set()
+    
     res = await m.reply_text(
         text=f"Hi **{m.from_user.first_name}**\n\n ⚡ I am a ***file/video*** merger bot\n\n😎 I can merge Telegram files!, **And upload it to telegram**\n\nOwner: **🈲 @{Config.OWNER_USERNAME}** ",
         quote=True,
     )
-    del user
 
 
 @mergeApp.on_message(

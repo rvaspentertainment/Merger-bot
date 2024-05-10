@@ -194,7 +194,7 @@ async def start_handler(c: Client, m: Message):
     user = UserSettings(m.from_user.id, m.from_user.first_name)
     
     res = await m.reply_text(
-        text=f"Hi **{m.from_user.first_name}**\n\n ⚡ I am a file/video merger bot\n\n😎 I can merge Telegram files!, And upload it to telegram\n\n**Owner: 🈲 @{Config.OWNER_USERNAME}** ",
+        text=f"Hi **{m.from_user.first_name}**\n\n ⚡ I am a file/video merger bot\n\n😎 I can merge Telegram files!, And upload it to telegram\n\n**[Made with ♥ by](https://t.me/botio_devs)** ",
         quote=True,
     )
     del user
@@ -447,11 +447,11 @@ async def help_msg(c: Client, m: Message):
 async def about_handler(c: Client, m: Message):
     await m.reply_text(
         text="""
-**Mʏ ɴᴀᴍᴇ** : [VIDEO MERGER](https://t.me/Video_l_Merger)
+**Mʏ ɴᴀᴍᴇ** : [𝚅𝙸𝙳𝙴𝙾 𝙼𝙴𝚁𝙶𝙴𝚁](https://t.me/Video_l_Merger)
 
 **Cʜᴀɴɴᴇʟ** : [**.io devs**](https://t.me/botio_devs)
 
-**Dᴀᴛᴀʙᴀsᴇ** : [MᴏɴɢᴏDB](https://cloud.mongodb.com)
+**Dᴀᴛᴀʙᴀsᴇ :** [MᴏɴɢᴏDB](https://cloud.mongodb.com)
 
 **Lᴀɴɢᴜᴀɢᴇ :** [Pʏᴛʜᴏɴ 3.12.3](https://www.python.org/)
 

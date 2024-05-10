@@ -196,7 +196,7 @@ async def start_handler(c: Client, m: Message):
     res = await m.reply_text(
         text=f"Hi **{m.from_user.first_name}**\n\n ⚡ I am a file/video merger bot\n\n😎 I can merge Telegram files!, And upload it to telegram\n\n**[Made with ♥ by](https://t.me/botio_devs)** ",
         quote=True,
-        Disable_web_page_preview=True
+        disable_web_page_preview=True
     )
     del user
 
@@ -452,7 +452,7 @@ async def about_handler(c: Client, m: Message):
 
 **Cʜᴀɴɴᴇʟ** : [**.io devs**](https://t.me/botio_devs)
 
-**Dᴀᴛᴀʙᴀsᴇ :** [MᴏɴɢᴏDB](https://cloud.mongodb.com)
+**Dᴀᴛᴀʙᴀsᴇ** : [MᴏɴɢᴏDB](https://cloud.mongodb.com)
 
 **Lᴀɴɢᴜᴀɢᴇ :** [Pʏᴛʜᴏɴ 3.12.3](https://www.python.org/)
 
@@ -460,7 +460,7 @@ async def about_handler(c: Client, m: Message):
 
 **Dᴇᴠᴇʟᴏᴘᴇʀ :** [Appuz](https://t.me/Appuz_007)
 """,
-        quote=True, Disable_web_page_preview=True)
+        quote=True, disable_web_page_preview=True)
 
 
 @mergeApp.on_message(

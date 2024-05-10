@@ -194,7 +194,7 @@ async def start_handler(c: Client, m: Message):
     user = UserSettings(m.from_user.id, m.from_user.first_name)
     
     res = await m.reply_text(
-        text=f"Hi **{m.from_user.first_name}**\n\n ⚡ I am a file/video merger bot\n\n😎 I can merge Telegram files!, And upload it to telegram\n\n**[Made with ♥ by](https://t.me/botio_devs)** ",
+        text=f"Hi **{m.from_user.first_name}**\n\n ⚡ I am a file/video merger bot\n\n😎 I can merge Telegram files!, And upload it to telegram\n\n**[Made With ♥ By: .io devs 🤍](https://t.me/botio_devs)** ",
         quote=True,
         disable_web_page_preview=True
     )

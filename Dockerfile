@@ -4,7 +4,7 @@ WORKDIR /usr/src/mergebot
 COPY . /usr/src/mergebot
 
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN pip install -r needs.txt
 
 RUN apt-get -y update \
     && apt-get -y upgrade \

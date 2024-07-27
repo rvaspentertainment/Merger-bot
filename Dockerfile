@@ -1,21 +1,34 @@
-FROM python:3.10
+FROM python:3.11
 
 WORKDIR /usr/src/mergebot
+COPY . /usr/src/mergebot
+
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
 
 RUN apt-get -y update \
     && apt-get -y upgrade \
     && apt-get install -y git wget curl pv jq ffmpeg neofetch mediainfo \
-    && apt-get clean
+    && apt-get clean 
 
-# To enable rclone upload, uncomment the following line
-# RUN curl https://rclone.org/install.sh | bash
-
-COPY requirements.txt .
-
-RUN python -m venv venv && venv/bin/pip install --no-cache-dir -r requirements.txt
+    
+EXPOSE 8080
 
 COPY . .
 
 RUN chmod +x start.sh
 
 CMD ["bash", "start.sh"]
+
+
+
+
+
+
+
+
+
+
+
+
+

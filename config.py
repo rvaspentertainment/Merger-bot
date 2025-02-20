@@ -2,11 +2,11 @@ import os
 
 
 class Config(object):
-    API_HASH = os.environ.get("API_HASH")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
-    TELEGRAM_API = os.environ["TELEGRAM_API"]
-    OWNER = os.environ.get("OWNER")
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME")
+    API_HASH = os.environ.get("3d1ab21b51395b1d8297932e7a264e96")
+    BOT_TOKEN = os.environ.get("7681701929:AAH4tmQejPQYmJ4Os-F4o_qknMI3o0NZSZc")
+    TELEGRAM_API = os.environ["7681701929"]
+    OWNER = os.environ.get("Ghost")
+    OWNER_USERNAME = os.environ.get("@NeverStopI")
     PASSWORD = os.environ.get("PASSWORD")
     DATABASE_URL = os.environ.get("DATABASE_URL")
     LOGCHANNEL = os.environ.get("LOGCHANNEL")  # Add channel id as -100 + Actual ID

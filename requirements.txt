@@ -9,3 +9,12 @@ pyromod
 python-dotenv
 requests
 TgCrypto
+python-telegram-bot
+requests
+ffmpeg
+aiohttp
+pyrogram
+tgcrypto
+pymongo[srv]
+motor
+apt-get update && apt-get install -y ffmpeg
